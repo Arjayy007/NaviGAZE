@@ -20,6 +20,10 @@ Logs/
 *.msm
 *.msp
 
+*.apk
+NaviGAZE0.1_BurstDebugInformation_DoNotShip/
+
+
 # User-specific project files
 *.userprefs
 
