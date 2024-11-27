@@ -1,0 +1,55 @@
+# User-specific files
+.vscode/
+.idea/
+.DS_Store
+
+# Unity generated files
+Library/
+Temp/
+Obj/
+Build/
+BuildSettings/
+Logs/
+
+# Uncomment this line if you have a macOS system:
+# .Trash/
+
+# Windows installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# User-specific project files
+*.userprefs
+
+# Unity 3D Cache files
+.unitypackage
+
+# IDE config
+.vscode/
+.idea/
+
+# Add your own Unity project file extension here, if necessary:
+# *.user
+
+# JetBrains Rider files
+.idea/
+
+# Rider-specific project settings
+.idea/
+
+# Uncomment if you use Visual Studio for Mac
+# .vscode/settings.json
+
+# Uncomment this line if you have Unity Cloud Build
+# .unitycloudbuild/
+
+# Unity Asset Bundles
+# Uncomment these if you are using Asset Bundles for Unity
+# .assetbundle
+# *.ab
+
+# Build folders
+Build/
+BuildSettings/
