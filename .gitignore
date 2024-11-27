@@ -1,0 +1,22 @@
+# Ignore Unity-specific folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Dd]ebug/
+[Dd]ebugPublic/
+Build/
+Builds/
+Assets/AssetStoreTools/
+UserSettings/
+
+# Ignore other unnecessary files
+*.csproj
+*.unityproj
+*.sln
+*.user
+*.userprefs
+
+# Ignore PlayFab files if not needed
+PlayFab.csproj
+PlayFabEditorExtensions.csproj
+PlayFabSDKEditor.csproj
