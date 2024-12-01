@@ -8,6 +8,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 4755b35b590504809a7525fd2109c2e2
+  - enabled: 1
+    path: Assets/Scenes/LandingPage.unity
+    guid: 7798b227635d7b74fb61c991529726c7
+  - enabled: 1
+    path: Assets/Scenes/StudentLogin.unity
+    guid: 16d4e3eceb3e89b47902be5e0fb25067
+  - enabled: 1
+    path: Assets/Scenes/RegistrationPage.unity
+    guid: d7fe5df9593471b47abab5f24eccea42
+  - enabled: 1
+    path: Assets/Scenes/RegistrationPage2.unity
+    guid: 3f26166b749824b499c7b9b2c2182f76
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6ee72d15cf39dd748a13eac57397b9af,
       type: 2}
