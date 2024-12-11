@@ -45,12 +45,25 @@ void OnRegisterFailure(PlayFabError error){
 
 
 public void LoginStudent(){
-  var request = new LoginWithPlayFabRequest{
-      Username = studentNumber.text,
+
+  bool isEmail = studentNumber.text.Contains("@");
+
+  if (isEmail){
+   var emailRequest = new LoginWithEmailAddressRequest{
+      Email = studentNumber.text,
       Password = password.text
+   };
+  PlayFabClientAPI.LoginWithEmailAddress(emailRequest, OnLoginSuccess, OnLoginFailure);
+}else{
+  var usernameRequest = new LoginWithPlayFabRequest{
+    Username = studentNumber.text,
+    Password = password.text
   };
-  PlayFabClientAPI.LoginWithPlayFab(request, OnLoginSuccess, OnLoginFailure);
+  PlayFabClientAPI.LoginWithPlayFab(usernameRequest, OnLoginSuccess, OnLoginFailure);
 }
+
+}
+
 
   public void GuestLogin()
   {

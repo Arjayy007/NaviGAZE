@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RegistrationPage2.unity
     guid: 3f26166b749824b499c7b9b2c2182f76
+  - enabled: 1
+    path: Assets/Scenes/Dashboard.unity
+    guid: a6875ae409e6b0c4dad7ea55a16082e7
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6ee72d15cf39dd748a13eac57397b9af,
       type: 2}

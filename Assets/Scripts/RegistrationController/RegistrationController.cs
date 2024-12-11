@@ -24,8 +24,9 @@ public class RegistrationController : MonoBehaviour
     public TMP_InputField subjectCode;
     public TMP_InputField room;
     public TMP_InputField subjectName;
-    public TMP_InputField dayOfTheWeek;
-    public TMP_InputField campus;
+   
+    public TMP_Dropdown campus;
+    public TMP_Dropdown daysOfTheWeek;
 
      [Header("Table Elements")]
     public GameObject tableRowPrefab;  // Reference to the prefab of the table row
@@ -36,7 +37,7 @@ public class RegistrationController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+            // Call this in Start or as needed
     }
 
 
@@ -49,15 +50,16 @@ public class RegistrationController : MonoBehaviour
         rowTexts[0].text = subjectCode.text;  
         rowTexts[1].text = subjectName.text;  
         rowTexts[2].text = room.text;         
-        rowTexts[3].text = dayOfTheWeek.text; 
-        rowTexts[4].text = campus.text;       
+        rowTexts[3].text = daysOfTheWeek.options[daysOfTheWeek.value].text;  // Get selected text from the dropdown
+        rowTexts[4].text = campus.options[campus.value].text;  // Get selected text from the dropdown
 
 
         subjectCode.text = "";
         room.text = "";
         subjectName.text = "";
-        dayOfTheWeek.text = "";
-        campus.text = "";
+        campus.value = 0;  // Reset dropdown to the first option
+        daysOfTheWeek.value = 0;
+ // Reset dropdown to the first option
 
     }
 
@@ -129,5 +131,5 @@ public class RegistrationController : MonoBehaviour
     }
 }
 
-    
+
 }

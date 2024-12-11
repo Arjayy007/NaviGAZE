@@ -8,6 +8,7 @@ public class DropdownController : MonoBehaviour
    public TMP_Dropdown collegeDepartment;
    public TMP_Dropdown collegeProgram;
 
+
    [Header("College and Programs")]
    public Dictionary<string, List<string>> departmentPrograms = new Dictionary<string, List<string>>{
         {"Select College", new List<string>{"Select Program"}},
@@ -47,6 +48,7 @@ public class DropdownController : MonoBehaviour
 
     void Start()
     {
+
          PopulateCollegeDepartment();
 
         // Add listener for department dropdown
@@ -54,7 +56,11 @@ public class DropdownController : MonoBehaviour
 
         // Initialize Program Dropdown based on the first department
         OnCollegeDepartmentChanged(0);
+
+       
     }
+
+    
 
     public void PopulateCollegeDepartment(){
         collegeDepartment.options.Clear();
